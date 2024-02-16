@@ -1,0 +1,27 @@
+version: '3'
+
+services:
+  nodejs:
+    container_name: nodejs_app
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - .:/app
+    ports:
+      - "3000:3000"
+    depends_on:
+      - postgresql
+
+  postgresql:
+    container_name: postgresql
+    image: postgres
+    environment:
+      POSTGRES_DB: ${POSTGRES_DB}
+      POSTGRES_USER: ${POSTGRES_USER}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+    ports:
+      - "5432:5432"
+
+volumes:
+  mongodb_data:
