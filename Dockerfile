@@ -20,6 +20,8 @@ COPY package*.json ./
 # Instala as dependências do projeto
 RUN npm install
 
+RUN npx prisma generate
+
 # Copia o restante dos arquivos do projeto para o diretório de trabalho
 COPY . .
 
