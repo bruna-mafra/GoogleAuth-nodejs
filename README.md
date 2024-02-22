@@ -5,12 +5,11 @@ Foi desenvolvido utilizando Node.js como linguagem principal, PostgreSQL como ba
 # Como executar
 1. Clone o repositório: `git clone https://github.com/bruna-mafra/GoogleAuth.git`
 
+2. Renomeie o arquivo `.env.example` para `.env` e configure as variáveis de ambiente conforme necessário, incluindo as credenciais da API do Google e as configurações do banco de dados.
 
-2. Instale as dependências: `npm install`
+3. Instale as dependências: `npm install`
 
-3. Inicialize o Docker: `docker-compose up -d`
-
-4. Renomeie o arquivo `.env.example` para `.env` e configure as variáveis de ambiente conforme necessário, incluindo as credenciais da API do Google e as configurações do banco de dados.
+4. Inicialize o Docker: `docker-compose up -d`
 
 5. Execute as migrações do banco de dados: `npx prisma migrate dev`
 
