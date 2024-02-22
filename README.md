@@ -3,7 +3,7 @@ Este projeto é uma implementação de um sistema de autenticação utilizando a
 Foi desenvolvido utilizando Node.js como linguagem principal, PostgreSQL como banco de dados, Prisma como ORM (Object-Relational Mapping), Express como framework web, e JWT (JSON Web Tokens) para autenticação e autorização.
 
 # Como executar
-1. Clone o repositório: `https://github.com/bruna-mafra/GoogleAuth.git`
+1. Clone o repositório: `git clone https://github.com/bruna-mafra/GoogleAuth.git`
 
 
 2. Instale as dependências: `npm install`
